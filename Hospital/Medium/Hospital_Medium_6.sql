@@ -17,7 +17,6 @@ GROUP BY gender
 - The subqueries already scan the whole table independently, so there’s no need for an outer 'FROM patients'.
 - Adding 'GROUP BY gender' creates multiple rows because it groups the table’s rows, which prevents showing just one row with both counts.
 
-
 Corrected version: */
 
 SELECT 
