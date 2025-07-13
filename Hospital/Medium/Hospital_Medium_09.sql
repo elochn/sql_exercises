@@ -3,9 +3,9 @@ Order from most to least patients and then by city name ascending.*/
 
 SELECT
     city, 
-    count(patient_id) 
-from patients
-group by city
-order by 
-	count(patient_id) DESC, 
+    COUNT(patient_id) 
+FROM patients
+GROUP BY city
+ORDER BY 
+	COUNT(patient_id) DESC, 
 	city ASC
