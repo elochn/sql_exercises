@@ -2,3 +2,10 @@
 
 Ex: A patient with an identical name can be considered a duplicate.*/
 
+SELECT 
+	first_name, 
+    last_name, 
+    COUNT(*) AS num_of_duplicata
+FROM patients
+GROUP BY first_name, last_name
+HAVING num_of_duplicata > 1
